@@ -4,13 +4,16 @@ import time
 import math
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 
 def calc(x):
   return str(math.log(abs(12*math.sin(int(x)))))
 
 try:
     link = "http://suninjuly.github.io/explicit_wait2.html"
-    browser = webdriver.Chrome()
+    options = Options()
+    options.add_argument("--headless")
+    browser = webdriver.Chrome(options=options)
     browser.maximize_window()
     browser.get(link)
 
