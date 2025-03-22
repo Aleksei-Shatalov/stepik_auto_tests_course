@@ -10,4 +10,3 @@ def test_button_basket(browser):
     button = browser.find_elements(By.CSS_SELECTOR, "button.btn.btn-add-to-basket")
     assert button, "Элемент не найден"
 
-
