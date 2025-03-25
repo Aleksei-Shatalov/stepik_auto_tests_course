@@ -1,8 +1,6 @@
-from selenium.webdriver.support.wait import WebDriverWait
 from .base_page import BasePage
 from selenium.common.exceptions import NoAlertPresentException, TimeoutException
 from .locators import ProductPageLocators
-from selenium.webdriver.support import expected_conditions as EC
 import math
 
 
